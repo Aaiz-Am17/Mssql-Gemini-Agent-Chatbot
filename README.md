@@ -66,3 +66,117 @@ Designed to work with Gemini, GPT, or local LLMs (e.g., Ollama).
 ---
 
 ## 🏗️ System Architecture
+User (Streamlit UI)
+↓
+FastAPI API Layer
+↓
+LangGraph ReAct Agent
+↓
+Read-Only SQL Toolkit
+↓
+Client MSSQL Database (Private)
+
+---
+
+## 📁 Project Structure
+mssql-gemini-agent-chatbot/
+│
+├── backend/
+│ ├── main.py # Sanitized FastAPI backend
+│ ├── agent_stub.py # Agent structure (logic omitted)
+│ └── requirements.txt
+│
+├── frontend/
+│ ├── app.py # Streamlit chat UI
+│ └── requirements.txt
+│
+├── .env.example
+├── .gitignore
+├── README.md
+└── LICENSE
+
+
+
+---
+
+
+## 🔒 Confidentiality & IP Handling
+
+
+To respect client agreements, the following are **intentionally excluded**:
+- System prompts
+- Database schema & table names
+- SQL query templates
+- Business logic & constraints
+
+
+✅ What *is* shown:
+- Overall architecture
+- API design
+- Agent structure
+- Security practices
+- Production-ready project layout
+
+
+---
+
+
+## 🛠️ Setup & Installation (Interface Demo)
+
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/mssql-gemini-agent-chatbot.git
+cd mssql-gemini-agent-chatbot
+```
+2. Backend
+```
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
+3. Frontend
+```
+cd frontend
+pip install -r requirements.txt
+streamlit run app.py
+```
+🧪 Example Queries (Demonstration)
+
+“Show attendance for a student”
+
+“Average attendance of a batch”
+
+“Generate a monthly attendance report”
+
+“Overall attendance for a subject”
+
+(Exact results depend on private backend logic.)
+
+🎯 Why This Project Matters
+
+Demonstrates real-world LLM agent design
+
+Shows safe LLM + SQL integration
+
+Highlights strong security-first thinking
+
+Mirrors how production AI assistants are built
+
+Reflects professional handling of client IP
+
+🙋‍♂️ Contributing
+
+Contributions are welcome!
+Fork the repo → create a branch → submit a PR 🚀
+
+📜 License
+
+This project is licensed under the MIT License.
+
+👥 Credits
+
+Developed by Aaiz Mohsin (BS Artificial Intelligence, GIKI)
+Built as part of professional AI/LLM engineering work and experimentation with agentic systems.
+
+⭐ If this project helped you, consider giving it a star!
