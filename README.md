@@ -66,15 +66,22 @@ Designed to work with Gemini, GPT, or local LLMs (e.g., Ollama).
 ---
 
 ## 🏗️ System Architecture
-User (Streamlit UI)
-↓
-FastAPI API Layer
-↓
-LangGraph ReAct Agent
-↓
-Read-Only SQL Toolkit
-↓
-Client MSSQL Database (Private)
+
+```text
+       [ User (Streamlit UI) ]
+                  │
+                  ▼
+       [ FastAPI Backend Layer ]
+                  │
+                  ▼
+     [ LangGraph ReAct Agent (LLM) ]
+                  │
+                  ▼
+       [ Read-Only SQL Toolkit ]
+                  │
+                  ▼
+    [ Client MSSQL Database (Private) ]
+```
 
 ---
 
