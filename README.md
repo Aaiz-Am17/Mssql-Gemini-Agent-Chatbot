@@ -79,21 +79,24 @@ Client MSSQL Database (Private)
 ---
 
 ## 📁 Project Structure
+
+```text
 mssql-gemini-agent-chatbot/
 │
 ├── backend/
-│ ├── main.py # Sanitized FastAPI backend
-│ ├── agent_stub.py # Agent structure (logic omitted)
-│ └── requirements.txt
+│   ├── main.py            # Sanitized FastAPI backend
+│   ├── agent_stub.py      # Agent structure (logic omitted)
+│   └── requirements.txt
 │
 ├── frontend/
-│ ├── app.py # Streamlit chat UI
-│ └── requirements.txt
+│   ├── app.py             # Streamlit chat UI
+│   └── requirements.txt
 │
 ├── .env.example
 ├── .gitignore
 ├── README.md
 └── LICENSE
+```
 
 
 
