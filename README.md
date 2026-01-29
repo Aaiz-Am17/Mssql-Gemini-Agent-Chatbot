@@ -129,7 +129,7 @@ To respect client agreements, the following are **intentionally excluded**:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/mssql-gemini-agent-chatbot.git
+git clone https://github.com/Aaiz-Am17/mssql-gemini-agent-chatbot.git
 cd mssql-gemini-agent-chatbot
 ```
 2. Backend
@@ -144,30 +144,22 @@ cd frontend
 pip install -r requirements.txt
 streamlit run app.py
 ```
-🧪 Example Queries (Demonstration)
+### 🧪 Example Queries (Demonstration)
+* "Show attendance for a student"
+* "Average attendance of a batch"
+* "Generate a monthly attendance report"
+* "Overall attendance for a subject"
 
-“Show attendance for a student”
+> _Note: Exact results depend on private backend logic._
 
-“Average attendance of a batch”
+### 🎯 Why This Project Matters
+* 🚀 **Real-world Design:** Demonstrates production-grade LLM agent architecture.
+* 🔐 **Secure Integration:** Shows safe, sanitized LLM + SQL integration.
+* 🛡️ **Security-First:** Highlights strong security-first thinking and engineering.
+* 🏗️ **Production Ready:** Mirrors how professional AI assistants are built.
+* 💼 **Professionalism:** Reflects professional handling of client IP and data.
 
-“Generate a monthly attendance report”
-
-“Overall attendance for a subject”
-
-(Exact results depend on private backend logic.)
-
-🎯 Why This Project Matters
-
-Demonstrates real-world LLM agent design
-
-Shows safe LLM + SQL integration
-
-Highlights strong security-first thinking
-
-Mirrors how production AI assistants are built
-
-Reflects professional handling of client IP
-
+  
 🙋‍♂️ Contributing
 
 Contributions are welcome!
